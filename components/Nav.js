@@ -23,7 +23,7 @@ const Nav = ({darkMode, setDarkMode}) => {
                     <FaSun style={{fontSize: 25}}/>
                 </div>
                 <div className={styles.menubtn + ` `+ `${menuOpen? styles.open : ``}`} onClick={hamburguerAnimationHandler}>
-                    <div className={styles.menubtnburguer}></div>
+                    <div className={styles.menubtnburguer + ` `+ `${!darkMode? styles.darkback : ``}`}></div>
                 </div>
             </div>
             

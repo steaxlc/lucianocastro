@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: space-between;
     background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 }
 
 .logo{
@@ -58,6 +63,13 @@
 .menubtnburguer::after {
     transform: translateY(12px);
 }
+
+.darkback::before,
+.darkback:after,
+.darkback{
+    background: #020c17;
+}
+
 /* Animation */
 
 .menubtn.open .menubtnburguer{

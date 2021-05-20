@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HeroSection from '../components/HeroSection'
 import Nav from '../components/Nav'
 import styles from '../styles/home.module.css'
 
@@ -19,17 +20,18 @@ export default function Home() {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
-      <div className={styles.teste}>
-        teste
+      <HeroSection
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
+      <div className={styles.section}>
+        teste 1
       </div>
-      <div className={styles.teste}>
-        teste
+      <div className={styles.section}>
+        teste 2
       </div>
-      <div className={styles.teste}>
-        teste
-      </div>
-      <div className={styles.teste}>
-        teste
+      <div className={styles.section}>
+        teste 3
       </div>
       
     </div>

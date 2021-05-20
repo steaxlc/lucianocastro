@@ -1,0 +1,95 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.texto h1 {
+    font-size: 5em;
+}
+
+.texto p {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.castro{
+    margin-top: -50px;
+}
+
+.boxline{
+    display:flex;
+    justify-content: space-between;
+}
+
+.line{
+    width: 100px;
+    background: #ff382e;
+    border-radius: 25px;
+    height: 5px;
+    margin-bottom: 17px;
+}
+
+.sky{
+    transition: all .5s ease-in-out;
+    width: 70%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.sky img{
+    position: fixed;
+    top: -20%;
+    left: -30px;
+}
+.daysky{
+    transition: all 1s ease-in-out;
+    width: 70%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.daysky img{
+    position: fixed;
+    top: -20%;
+    left: -130px;
+}
+
+.smaller{
+    margin-top: 100px;
+    margin-left: 120px;
+    width: 100%;
+}
+
+.hidemoon img{
+    transition: all 1s ease-in-out;
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+.showmoon img{
+    transition: all 1s ease-in-out;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.hidemoon .portfolio{
+    transition: all 1s ease-in-out;
+    transform: translateX(200%);
+    opacity: 0;
+}

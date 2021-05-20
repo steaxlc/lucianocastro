@@ -5,13 +5,16 @@
     background: linear-gradient( to top, #020c17, #072142, #4178dd, #b2defe);
     background-attachment: fixed;
     background-size: 275% 275%;
+    scroll-snap-type: y mandatory;
 }
 
 .darktheme{
     background-position: 0 100%;
+    color: white;
 }
 
-.teste{
+.section{
+    scroll-snap-align: start;
     display: flex;
     align-items: center;
     justify-content: center;
