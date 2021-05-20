@@ -6,6 +6,10 @@ body {
     background: linear-gradient( to top, #020c17, #072142);
     min-height: 100vh;
     color: #020c17;
+    scroll-behavior: smooth;
+    scroll-snap-type:mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
 }
 
 a {

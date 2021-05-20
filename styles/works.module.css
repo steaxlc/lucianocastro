@@ -1,0 +1,74 @@
+.main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 30px;
+}
+
+.imagem{
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 70vh;
+}
+
+.legenda h1 {
+    font-size: 8em;
+    position:absolute;
+    bottom:0;
+    left:0;
+    color: white;
+}
+
+.foto{
+    margin-left: 130px;
+}
+
+.foto img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.headline{
+    margin-right: 87px;
+    background: lightgreen;
+}
+
+.texto{
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: bold;
+    z-index: 5;
+    margin-right: 87px;
+}
+
+.texto h1 {
+    font-size: 5em;
+}
+
+.texto p {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.castro{
+    margin-top: -50px;
+}
+.boxline{
+    display:flex;
+    justify-content: space-between;
+}
+
+.line{
+    width: 100px;
+    background: #ff382e;
+    border-radius: 25px;
+    height: 5px;
+    margin-bottom: 17px;
+}

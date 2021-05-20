@@ -5,7 +5,6 @@
     background: linear-gradient( to top, #020c17, #072142, #4178dd, #b2defe);
     background-attachment: fixed;
     background-size: 275% 275%;
-    scroll-snap-type: y mandatory;
 }
 
 .darktheme{
@@ -14,9 +13,18 @@
 }
 
 .section{
-    scroll-snap-align: start;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    scroll-snap-align: start;
+    z-index: 96;
+}
+
+
+.sidemenu{
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    right: 30px;
 }
