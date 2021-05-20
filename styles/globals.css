@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background: linear-gradient( to top, #020c17, #072142);
-    color: #fff;
+    min-height: 100vh;
+    color: #020c17;
 }
 
 a {
@@ -15,6 +14,11 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+body{
+  margin-top: 0px;
 }
 

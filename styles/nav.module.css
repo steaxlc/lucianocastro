@@ -1,0 +1,73 @@
+.stylednav{
+    padding: 15px 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.logo{
+    font-size: 1.5em;
+}
+
+.clickable {
+    display: flex;
+    align-items: center;
+}
+
+.sunmoon{
+    cursor: pointer;
+}
+
+
+.menubtn {
+    background: transparent;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menubtnburguer{
+    width: 40px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menubtnburguer::before,
+.menubtnburguer::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menubtnburguer::before {
+    transform: translateY(-12px);
+}
+.menubtnburguer::after {
+    transform: translateY(12px);
+}
+/* Animation */
+
+.menubtn.open .menubtnburguer{
+    transform: translateX(-40px);
+    background: transparent;
+}
+
+.menubtn.open .menubtnburguer::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menubtn.open .menubtnburguer::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
