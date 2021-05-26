@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react'
-import styles from '../styles/works.module.css'
+import React from 'react'
+import styles from '../styles/about.module.css'
 
-const MyWorks = () => {
-    var inWidth = 1000;
-    useEffect(() => {
+const AboutSection = () => {
+    var inWidth = 0;
+    if (typeof window === 'object') {
         inWidth = window.innerWidth;
-    }, [])
+      }
 
     return (
         <div className={styles.main}>
@@ -16,13 +16,12 @@ const MyWorks = () => {
             <div></div>
                 <div className={styles.content}>
                     
-                    <h1>Come to see</h1>
-                    <h1 className={styles.secondline}>My Projects</h1>
+                    <h1>About me</h1>
                     <div className={styles.boxline}>
                         <div className={inWidth <= 768 ? styles.line: ``}></div>
                     <div className={inWidth > 768 ? styles.line: ``}></div>
                     </div>
-                    <p>In this section will be described and showed my latest projects.</p>
+                    <p>Who am i? What's my goals?</p>
                     <a href="#" ><div className={styles.buttons}>Show me more</div></a>
                 </div>
             </div>
@@ -30,4 +29,4 @@ const MyWorks = () => {
     )
 }
 
-export default MyWorks
+export default AboutSection

@@ -12,8 +12,10 @@
 .left{
     width: 50%;
     height: 600px;
-    background: url("/img/pc.jpg") no-repeat center / cover;
+    background: url("/img/me.jpg") no-repeat center / cover;
+    border-radius: 30px;;
 }
+
 
 .right{
     width: 50%;
